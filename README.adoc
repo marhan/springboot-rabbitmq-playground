@@ -4,6 +4,40 @@
 
 - https://www.rabbitmq.com/configure.html[RabbitMQ Configuration]
 
+Go into folder _rabbitmq_.
+
+[source, bash]
+----
+docker-compose up
+----
+
+Go to http://localhost:15672/[WebUI] and login with _rabbitmq:rabbitmq_.
+
+Configure Queues and Exchanges as chown in folder _doc_.
+
 == Spring Boot
 
 - https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html#integration-properties[RabbitMQ configuration]
+
+Go into folder _spring-boot_.
+
+Run application against virtual host "default".
+
+[source, bash]
+----
+./gradlew bootRun
+----
+
+Run application against virtual host "one".
+
+[source, bash]
+----
+ export SPRING_PROFILES_ACTIVE=host_one && ./gradlew bootRun
+----
+
+Run application against virtual host "two".
+
+[source, bash]
+----
+ export SPRING_PROFILES_ACTIVE=host_two && ./gradlew bootRun
+----
