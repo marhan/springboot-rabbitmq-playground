@@ -3,3 +3,7 @@
 == RabbitMQ
 
 - https://www.rabbitmq.com/configure.html[RabbitMQ Configuration]
+
+== Spring Boot
+
+- https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html#integration-properties[RabbitMQ configuration]

@@ -1,0 +1,16 @@
+package de.marhan.rabbitmq.rabbitmq;
+
+import lombok.Data;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+
+@Data
+@Configuration
+@ConfigurationProperties(prefix = "playground")
+public class PlaygroundProperties {
+
+    private String topicName;
+    private String queueName;
+    private String exchangeName;
+    private String routingKey;
+}

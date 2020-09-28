@@ -1,1 +1,21 @@
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+spring:
+  rabbitmq:
+    password: rabbitmq
+    username: rabbitmq
+    port: 5672
+    host: localhost
+
+playground:
+  topicName: playground-topic
+  queueName: playground-queue
+  exchangeName: playground-exchange
+  routingKey: playground.routing.key
 
