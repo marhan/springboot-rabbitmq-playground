@@ -1,0 +1,5 @@
+= springboot-rabbitmq-playground
+
+== RabbitMQ
+
+- https://www.rabbitmq.com/configure.html[RabbitMQ Configuration]

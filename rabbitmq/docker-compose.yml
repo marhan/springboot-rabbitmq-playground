@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  rabbitmq:
+    container_name: rabbitmq-playground
+    image: rabbitmq:3.8-alpine
+    environment:
+      RABBITMQ_NODENAME: rabbit@rabbitmq-playground
+      RABBITMQ_ERLANG_COOKIE: anycookie
+    volumes:
+      - ./enabled_plugins:/etc/rabbitmq/enabled_plugins
+      - ./rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
+      - ./logs/:/var/log/rabbitmq/
+      - ./management_agent.disable_metrics_collector.conf:/etc/rabbitmq/conf.d/management_agent.disable_metrics_collector.conf
+    ports:
+      - 5672:5672
+      - 15672:15672

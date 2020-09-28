@@ -1,0 +1,28 @@
+= Getting Started
+
+=== Reference Documentation
+
+For further reference, please consider the following sections:
+
+* https://docs.gradle.org[Official Gradle documentation]
+* https://docs.spring.io/spring-boot/docs/2.3.4.RELEASE/gradle-plugin/reference/html/[Spring Boot Gradle Plugin Reference Guide]
+* https://docs.spring.io/spring-boot/docs/2.3.4.RELEASE/gradle-plugin/reference/html/#build-image[Create an OCI image]
+* https://docs.spring.io/spring-boot/docs/2.3.4.RELEASE/reference/htmlsingle/#boot-features-amqp[Spring for RabbitMQ]
+* https://docs.spring.io/spring-boot/docs/2.3.4.RELEASE/reference/htmlsingle/#boot-features-developing-web-applications[Spring Web]
+* https://docs.spring.io/spring-boot/docs/2.3.4.RELEASE/reference/htmlsingle/#using-boot-devtools[Spring Boot DevTools]
+* https://docs.spring.io/spring-boot/docs/2.3.4.RELEASE/reference/htmlsingle/#configuration-metadata-annotation-processor[Spring Configuration Processor]
+
+=== Guides
+
+The following guides illustrate how to use some features concretely:
+
+* https://spring.io/guides/gs/messaging-rabbitmq/[Messaging with RabbitMQ]
+* https://spring.io/guides/gs/rest-service/[Building a RESTful Web Service]
+* https://spring.io/guides/gs/serving-web-content/[Serving Web Content with Spring MVC]
+* https://spring.io/guides/tutorials/bookmarks/[Building REST services with Spring]
+
+=== Additional Links
+
+These additional references should also help you:
+
+* https://scans.gradle.com#gradle[Gradle Build Scans – insights for your project's build]
