@@ -6,6 +6,7 @@ import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.time.LocalDateTime;
 
 @Slf4j
@@ -23,7 +24,12 @@ public class MessageProducer {
 
     @Scheduled(fixedRate = 5000)
     public void sendMessageScheduled() {
-        this.sendMessage("Run by scheduler at " + LocalDateTime.now());
+        this.sendMessage("Run by scheduler of instance " + properties.getInstanceName() + " at " + LocalDateTime.now());
+    }
+
+    @PostConstruct
+    private void printInstanceName() {
+        log.debug("INSTANCE NAME: {}", properties.getInstanceName());
     }
 
 }

@@ -13,4 +13,5 @@ public class PlaygroundProperties {
     private String queueName;
     private String exchangeName;
     private String routingKey;
+    private String instanceName;
 }

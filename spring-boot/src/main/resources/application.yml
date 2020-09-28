@@ -14,6 +14,7 @@ spring:
     host: localhost
 
 playground:
+  instanceName: HostDefault
   topicName: playground-topic
   queueName: playground-queue
   exchangeName: playground-exchange

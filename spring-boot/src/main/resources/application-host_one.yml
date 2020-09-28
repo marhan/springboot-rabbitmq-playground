@@ -5,3 +5,5 @@ spring:
   rabbitmq:
     virtual-host: one
 
+playground:
+  instanceName: HostOne
